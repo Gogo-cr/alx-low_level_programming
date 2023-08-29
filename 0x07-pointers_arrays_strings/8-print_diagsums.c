@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * print_diagsums - a function that prints the sum of the two diagonals of a square matrix of integers
+ * print_diagsums - prints the sum of two diagonals of a square
  * @a: input
  * @size: input
  * Return: 0
@@ -18,8 +18,8 @@ void print_diagsums(int *a, int size)
 	{
 		sum1 = sum1 + a[y * size + y];
 	}
-	
-	for (y = size -1; y >= 0; y--)
+
+	for (y = size - 1; y >= 0; y--)
 	{
 		sum2 += a[y * size + (size - y - 1)];
 	}
